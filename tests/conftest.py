@@ -37,6 +37,7 @@ except ImportError:  # pragma: no cover
 TEST_API_KEY = "test-api-key-cua-lab"
 os.environ["AGENT_API_KEY"] = TEST_API_KEY
 os.environ["REDIS_URL"] = "fake://"
+os.environ["LLM_PROVIDER"] = "mock"
 
 
 def pytest_configure(config):
